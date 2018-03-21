@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Accueil</title>
+    <link rel="stylesheet" type="text/css" href="../../css/mainEnthreide.css" th:href="@{css/mainEnthreide.css}"/>
+    <link rel="stylesheet" type="text/css" href="../../css/espaceperso.css" th:href="@{css/espaceperso.css}"/>
+    <link rel="stylesheet" type="text/css" href="../../css/annonce" th:href="@{css/annonce.css}"/>
+
+    <script type="application/javascript" src="script/script.js" ></script>
+
+</head>
+<body action="accueil">
+<div th:insert="~{fragments::menu}"></div>
+<section>
+
+    <div th:insert="~{fragments::categorie}"></div>
+    <div class="annonce" id="dayAd">L'ANNONCE DU JOUR</div>
+    <div th:insert="~{fragments::annonceDuJour}"></div>
+
+    <div class="annonce"><a href="#">UNE PETITE SOIF?</a></div>
+</section>
+
+</body>
+<footer th:insert="~{fragments::footer}"></footer>
+</html>
